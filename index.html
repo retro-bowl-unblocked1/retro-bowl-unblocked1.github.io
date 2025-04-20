@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Bowl - Play Online</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-900 text-white">
+    <header class="bg-purple-800 p-4 shadow-md sticky top-0 z-10">
+        <div class="container mx-auto flex justify-between items-center flex-wrap">
+            <div class="text-2xl font-bold font-retro">
+                <a href="#home">Retro Bowl</a>
+            </div>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#home" class="hover:underline font-retro">Home</a></li>
+                    <li><a href="#play" class="hover:underline font-retro">Play</a></li>
+                    <li><a href="#about" class="hover:underline font-retro">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-4">
+        <section id="home" class="text-center py-8">
+            <img src="assets/images/retro-bowl-logo.png" alt="Retro Bowl Logo" class="mx-auto mb-4 w-64">
+            <h1 class="text-4xl font-bold font-retro mb-4">Welcome to Retro Bowl</h1>
+            <p class="text-lg font-retro text-neon-green">Experience the thrill of football in a glorious retro style! Manage your NFL franchise, build your dream team, and lead them to victory in the Retro Bowl championship.</p>
+        </section>
+
+        <section id="play" class="py-8">
+            <h2 class="text-3xl font-bold font-retro mb-4 text-center">Play Retro Bowl</h2>
+            <div class="flex justify-center mb-4">
+                <button id="fullscreenBtn" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 font-retro">Full Screen</button>
+            </div>
+            <iframe id="gameFrame" src="games/retro-bowl/index.html" class="w-full h-[1000px] rounded-lg shadow-md mx-auto block" frameborder="0"></iframe>
+        </section>
+
+        <section id="about" class="py-8 text-center">
+            <h2 class="text-3xl font-bold font-retro mb-4">About Retro Bowl</h2>
+            <p class="text-lg font-retro text-neon-green">Retro Bowl is an 8-bit styled American football game developed by New Star Games. Released in January 2020, it combines simple roster management with on-field action. Be the boss of your team, handle press duties, and call the shots to win the ultimate prize!</p>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white text-center p-4">
+        <p class="font-retro">© 2025 Retro Bowl. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
