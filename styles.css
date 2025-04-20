@@ -1,0 +1,38 @@
+body {
+    background-color: #1a1a1a;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.font-retro {
+    font-family: 'Press Start 2P', cursive;
+}
+
+.text-neon-green {
+    color: #39ff14;
+}
+
+#gameFrame {
+    max-width: 1400px;
+}
+
+header {
+    background: linear-gradient(90deg, #4b0082, #8a2be2);
+}
+
+@media (max-width: 640px) {
+    #gameFrame {
+        height: 800px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    p {
+        font-size: 0.75rem;
+    }
+}
